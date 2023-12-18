@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+       
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.backToTop a{
+    color: rgb(226, 137, 43);
+    position: fixed;
+    z-index: 10;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    right: 24px;
+    bottom: 80px;
+    transition: all.3s ease;
+    cursor: pointer;}
+/* navbar */
+#navbar{
+    width: 100vw;
+    display: flex;
+    align-items: stretch;
+}
+
+.container{
+    flex-grow: 8;
+
+ }
+.container ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 6px;
+ 
+}
+.container ul li{
+    list-style: none;
+    padding: 10px;
+    
+}
+.container ul li a{
+    text-decoration: none;
+    color: black;   
+}
+#title {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* main body */ 
+#section{
+    display: flex;
+    flex-direction: column;
+   
+}
+ .card {
+    display: flex;
+   flex-direction: column;
+}
+.card img{
+    width: 80%;
+    height: 30%;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+}
+#copyright{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+}
+#aboutUs{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    
+}
+#informations{
+    height: 100%;
+    width: 33%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#logo-footer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+#media{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ #media ul{
+    display: flex;
+    list-style: none;
+
+ }
+ #media ul li{
+    margin: 10px;
+    font-size: xx-large;
+    
+ }
+
+
+#contact{
+    height: 100%;
+    width: 33%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#contact ul{
+    list-style: none;
+}
+
+#informations ul{
+    list-style: none;
+}
+#informations a{
+    text-decoration: none;
+}

@@ -1,0 +1,185 @@
+/* reset styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* main style for the document */
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* βελος με το πατημα του οποιου ο χρηστης θα γυρνα στην κορυφη της σελιδας */
+.backToTop a {
+  color: rgb(104, 226, 43);
+  position: fixed;
+  z-index: 99;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  right: 24px;
+  bottom: 80px;
+  transition: all.3s ease;
+  cursor: pointer;
+}
+/* navbar */
+#navbar {
+  width: 100vw;
+  display: flex;
+  align-items: stretch;
+}
+/* διαμορφωνει το container  */
+.container {
+  flex-grow: 8;
+}
+ /* διαμορφωνει ολοκληρη την λιστα του container */
+.container ul {
+  display: flex;
+  justify-content: end;
+  margin-top: 6px;
+}
+ /* διαμορφωνει τα li*/
+.container ul li {
+  list-style: none;
+  padding: 10px;
+}
+/* διαμορφωνει τα a που βρισκονται μεσα στην λιστα li */
+.container ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* styles the div with id title */
+#title {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* main body */
+/* styles the hole id with id timeline */
+#timeline{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  background-color: blue;
+  margin-top: 100px;
+}
+/* style the div with id  top  */
+#top{
+  display: flex;
+  height: 50%;
+  border-bottom: solid red;
+}
+/* style the div with id bottom */
+#bottom{
+  display: flex;
+  height: 50%;
+  border-top: solid red;
+}
+/* styles the class partUp */
+.partsUp div{
+  height: 100%;
+  width: 20%;
+  margin-left: 10px;
+  border-left: solid salmon;
+}
+/* styles the class partDown */
+.partsDown div{
+  height: 100%;
+  width: 20%;
+  margin-left: 100px;
+  border-left: solid greenyellow;}
+
+/* history bolocks*/
+.history-blocks{
+  display: flex;
+  flex-direction: column;
+  background-color: gold;
+  height: 400px;
+  margin: 10px;
+}
+.history-blocks div{
+  height: 30%;
+  border: solid red;
+  margin: 5px;
+}
+
+
+
+
+/* footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+}
+#copyright{
+  display: flex;
+  height: 20%;
+  width: 100%;
+  justify-content: center;
+}
+#aboutUs{
+  display: flex;
+  height: 80%;
+  width: 100%;
+  
+}
+#informations{
+  height: 100%;
+  width: 33%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#logo-footer{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+#media{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#media ul{
+  display: flex;
+  list-style: none;
+
+}
+#media ul li{
+  margin: 10px;
+  font-size: xx-large;
+  
+}
+
+
+#contact{
+  height: 100%;
+  width: 33%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#contact ul{
+  list-style: none;
+}
+
+#informations ul{
+  list-style: none;
+}
+#informations a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
