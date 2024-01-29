@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactstyle.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <section>
+      <header>Contact Us</header>
+      <form action="#" class="form" id="contactForm">
+        <div class="fullName">
+          <div class="input-area">
+            <label for="">First Name *</label>
+            <input type="text" placeholder=" First name" id="first-name" oninput="firtsNameValidation()" />
+            <span id="error1"></span>
+          </div>
+          <div class="input-area">
+            <label for="">Last Name *</label>
+            <input type="text" placeholder=" Last name" id="last-name" oninput="lastNameValidation()" />
+            <span id="error2"></span>
+          </div>
+        </div>
+        <div class="mail">
+          <div class="input-area">
+            <label for="">E-mail *</label>
+            <input type="text" placeholder="E-mail address" id="e_mail" oninput="emailValidation()" />
+            <span id="error3"></span>
+          </div>
+          <div class="input-area">
+            <label for="">Confirm your E-mail *</label>
+            <input type="text" placeholder="Confirm your E-mail address" id="confirm" oninput="confirmValidation()" />
+            <span id="error4"></span>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="input-area">
+            <label for="">Phone Number *</label>
+            <input type="numeric" placeholder="Phone number" id="phone-number" oninput="phoneValidation()" />
+            <span id="error5"></span>
+          </div>
+        </div>
+        <div class="address">
+          <div class="input-area">
+            <label for="">Your Address *</label>
+            <input type="text" placeholder="Enter your address" id="address-input" oninput="addressValidation()" />
+            <span id="error6"></span>
+          </div>
+          <div class="city">
+            <div class="input-area">
+              <label for=""> City *</label>
+              <input type="text" placeholder="Enter your City" id="City" oninput="cityCapitalized()" />
+              <span id="error7"></span>
+            </div>
+            <div class="input-area">
+              <label for=""> Postal code *</label>
+              <input type="text" placeholder="Enter your postal code" id="postal-code" oninput="postalValidation()" />
+              <span id="error8"></span>
+            </div>
+          </div>
+        </div>
+        <textarea rows="4" cols="50" name="comment" form="contactForm">Enter text here...</textarea>
+        <div class="sub"><button>Submit</button></div>
+        <p>*required</p>
+        <span id="note"></span>
+      </form>
+    </section>
+    <script src="contactjs.js"></script>
+  </body>
+</html>
