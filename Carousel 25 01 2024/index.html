@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousel</title>
+    <link rel="stylesheet" href="carouselstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- thre three images of carousel -->
+      <img src="assetss/slide1.jpg" class="slides" />
+      <img src="assetss/slide2.jpg" class="slides" />
+      <img src="assetss/slide3.jpg" class="slides" />
+      <!-- the previous and next buttons with their on click functions.User  with thesh buttons can see the next image or the previous image. -->
+      <a class="prev" onclick="prevSlide()">&#10094;</a>
+      <a class="next" onclick="nextSlide()">&#10095;</a>
+      <!-- the stop  play and stop buttons with their on click functions.User with these bottons can stop and start the autoplay of carousel  -->
+      <a id="play" onclick="playSlide()">&#9654;</a>
+      <a id="stop" onclick="stopSlide()">&#9208;</a>
+      <!-- the speed up anslow buttons .with these buttons user can increase or slow down the speed of carousel. -->
+      <a id="slowDown" onclick="increaseTheTimeForTheNextImage()">&#43;</a>
+      <a id="speedUp" onclick="decreaseTheTimeForTheNextImage()">&#45;</a>
+      <!-- thumbnail photos. onlick to the thumbnail(1 ) the carousel shows image(1)  -->
+      <div class="thumbnails">
+        <img src="assetss/slide1.jpg" alt="photo1" class="thumb" onclick="currentSlide(1)" />
+        <img src="assetss/slide2.jpg" alt="photo2" class="thumb" onclick="currentSlide(2)" />
+        <img src="assetss/slide3.jpg" alt="photo3" class="thumb" onclick="currentSlide(3)" />
+      </div>
+    </div>
+    <script src="carouseljs.js"></script>
+  </body>
+</html>
